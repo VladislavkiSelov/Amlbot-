@@ -8,3 +8,4 @@
 <p>Склонировать проект на ваш компьютер с Github с помощью команды: git clone https://github.com/VladislavkiSelov/Amlbot-.git</p>
 <p>Установить зависимости: npm install</p>
 <p>Запустить проект: npm start</p>
+<p>Cайт разработа только по mobile</p>
