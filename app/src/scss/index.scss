@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  html{
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #000;
+    background: #efefef;
+  }
+
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }

@@ -1,0 +1,113 @@
+.footer {
+    width: 100%;
+    padding-top: 4rem;
+    background-color: #000;
+    color: white;
+
+    &__top {
+        border-bottom: 1px solid #323d46;
+        margin-bottom: 2.4rem;
+    }
+
+    &__address {
+        max-width: 320px;
+
+        p {
+            font-size: 1.8rem;
+            line-height: 100%;
+            color: #a1a1a1;
+            text-transform: uppercase;
+
+            &:nth-child(1) {
+                font-weight: 700;
+                margin-bottom: 1.2rem;
+            }
+
+            &:nth-child(2) {
+                font-weight: 600;
+                font-size: 1.6rem;
+                margin-bottom: 3.2rem;
+            }
+        }
+    }
+
+    &__logo {
+        max-width: 145px;
+        margin-bottom: 3rem;
+    }
+
+    &__logo-company {
+        max-width: 95px;
+        max-height: 23px;
+        margin-bottom: 1.6rem;
+        cursor: pointer;
+    }
+
+    &__rating {
+        font-size: 1.4rem;
+        line-height: 100%;
+        white-space: nowrap;
+        color: hsla(0, 0%, 100%, .5);
+        padding-bottom: 2.4rem;
+    }
+
+    .box_star {
+        display: flex;
+        gap: 0.8rem;
+        width: 100%;
+        margin-bottom: 1.6rem;
+        cursor: pointer;
+
+        &>svg {
+            min-width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 6rem;
+        column-gap: 2rem;
+
+        &>div {
+            width: calc(100%/2 - 1rem);
+
+            &>h4 {
+                margin: 0 0 3rem;
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 120%;
+                color: #a1a1a1;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+
+            li {
+                margin-bottom: 1rem;
+            }
+
+            a {
+                display: block;
+                width: fit-content;
+                padding: 0.6rem 0.8rem;
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 130%;
+                color: #fff;
+                border-radius: 0.8rem;
+
+                &:hover {
+                    background-color: hsla(0, 0%, 100%, .1);
+                }
+
+                @media (max-width:400px) {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.card-popular-question {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    margin-bottom: 0.5rem;
+
+    h3 {
+        font-size: 1.8rem;
+        padding: 2rem 4rem 1rem 0;
+        font-weight: 500;
+        line-height: 130%;
+        cursor: pointer;
+        position: relative;
+        transition: 0.7s;
+
+        &::before {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 2rem;
+            height: 2px;
+            background-color: #000;
+            cursor: pointer;
+
+        }
+
+        &::after {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-40%);
+            right: 9px;
+            width: 2px;
+            height: 2rem;
+            background-color: #000;
+            cursor: pointer;
+            opacity: 1;
+            transition: .3s;
+
+        }
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 140%;
+        color: #637381;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+}
+
+.active-question {
+    p {
+        max-height: 1000px;
+    }
+
+    h3 {
+        &::after {
+            opacity: 0;
+            transition: .3s;
+
+        }
+    }
+}

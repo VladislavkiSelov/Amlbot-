@@ -1,0 +1,16 @@
+.swiper-slide {
+    width: auto !important;  // Устанавливаем ширину слайда в auto
+  }
+
+.slideSwiper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    border-radius: 1.5rem;
+    background-color: #fff;
+
+    img{
+        width: 150px;
+    }
+}

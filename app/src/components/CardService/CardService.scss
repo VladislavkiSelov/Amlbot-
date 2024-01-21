@@ -1,0 +1,46 @@
+.card-service {
+    width: 100%;
+    padding: 2.4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: #ffffff;
+
+    &__box-img {
+        width: 60px;
+        margin-bottom: 2.4rem;
+    }
+
+    &>h3 {
+        font-size: 2rem;
+        line-height: 120%;
+        margin-bottom: 1.2rem;
+    }
+
+    &>p {
+        font-size: 1.4rem;
+        line-height: 140%;
+        font-weight: 400;
+        margin-bottom: 1.6rem;
+    }
+
+    &>button {
+        color: #007bfb;
+        font-size: 1.4rem;
+    }
+
+    &:hover {
+        &>button {
+            color: #fff;
+            background-color: #3056d3;
+        }
+    }
+}
+
+.card-servise-grey {
+    background-color: #323d46;
+    color: #fff;
+
+    &>button {
+        color: #ffffff;
+    }
+}
