@@ -32,14 +32,15 @@ export default function Header() {
   }
 
   return (
-    <header className="header container">
+    <header className="header-wrapper">
+      <div className="header container">
       <div className="header__logo">
         <img src={logo} alt="logo" />
       </div>
-      <div className="box_burger" onClick={handelClick}>
+      <div className="box_burger " onClick={handelClick}>
         <div className={`burger ${statusNav && "active_burger"}`}></div>
       </div>
-      <nav className={`header__navigation ${statusNav && "header__navigation-active"}`}>
+      <nav className={`header__navigation  ${statusNav && "header__navigation-active"}`}>
         <ul className="navigation-list">
           <li>
             <button
@@ -66,7 +67,7 @@ export default function Header() {
           <li>Расследование</li>
         </ul>
       </nav>
-      <div className="header__lang">
+      <div className="header__lang ">
         <button onClick={clickBtnLang} className={`btn_lang ${statusBtnLang && "btn_lang-active"}`} type="button">
           ru
         </button>
@@ -76,6 +77,7 @@ export default function Header() {
           <li>es</li>
           <li>fr</li>
         </ul>
+      </div>
       </div>
     </header>
   );
